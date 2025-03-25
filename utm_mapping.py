@@ -1,15 +1,15 @@
 # Паттерны для бесплатных поставщиков с их названиями
 free_patterns = {
-        "pp": "_pp",
-        "pesok": "_pp",
-        "ndzokt5": "_pp",       
+        "pp": "pp",
+        "pesok": "pp",
+        "ndzokt5": "pp",       
         "replay": "Replay",
         "replаy": "Replay",        
         "dubl": "Дубли",
         "dblvrn": "Двойная воронка",
         "otval": "Отвал",
-        "mod": "_pp",
-        "dlsbp": "_pp"
+        "mod": "pp",
+        "dlsbp": "pp"
         }
 
 # Список правил для определения поставщика
@@ -113,6 +113,157 @@ project2_rules = [
     ('sochi', 'Сочи'),
 ]
 
+jk_object = [
+('centralnyi', 'Астрахань ЖК Центральный'),
+('klub25', 'Санкт-Петербург ЖК Клуб 25'),
+('pogoda', 'Пермь ЖК Погода'),
+('ask', 'Краснодар АСК'),
+('we', 'Пермь ЖК Мы '),
+('belyaeva', 'Пермь ЖК Юг на Беляева'),
+('sostoyanie', 'Ростов ЖК Состояние'),
+('meridian', 'Тюмень ЖК Меридиан Слобода'),
+('ecos', 'Санкт-Петербург ЖК Экос Кузмолово'),
+('arhitektor', 'Владивосток ЖК Архитектор'),
+('kashtan', 'Владивосток ЖК Каштановый двор'),
+('futurist', 'Владивосток ЖК Футурист'),
+('ozero', 'Краснодар ЖК Дом у озера'),
+('plaza', 'Краснодар ЖК Плаза'),
+('sport', 'Краснодар ЖК Спортивная деревня'),
+('rodnoy', 'Краснодар ЖК Родной дом'),
+('sobytiye', 'Ростов ЖК Событие'),
+('grani', 'Краснодар ЖК Грани'),
+('1799', 'Ростов ЖК 1799'),
+('stolicyno', 'Ростов ЖК Сталицино'),
+('serdtse2', 'Ростов Сердце Ростова 2'),
+('october', 'Ростов ЖК Октябрь Парк'),
+('nord', 'Ростов ЖК Норд'),
+('levoberezhe', 'Ростов ЖК Левобережье'),
+('legenda', 'Ростов ЖК Легенда Ростова'),
+('gray', 'Ростов ЖК Gray'),
+('frame', 'Ростов ЖК Frame'),
+('dvizhenie61', 'Ростов ЖК Движение 61'),
+('donskoy', 'Ростов ЖК Донской Арбат'),
+('flora', 'Ростов ЖК Флора'),
+('manhjetten', 'Ростов ЖК Манхэттен 2.0'),
+('nasledie', 'Ростов ЖК Наследие'),
+('persona', 'Ростов ЖК Персона'),
+('zapadnye', 'Ростов ЖК Западные Аллеи'),
+('tekuchev', 'Ростов ЖК Текучев'),
+('reki', 'Ростов ЖК Город у реки'),
+('botanika', 'Ростов ЖК Ботаника'),
+('sosedi', 'Ростов ЖК Соседи'),
+('pritjazhenie', 'Ростов ЖК Притяжение'),
+('polet', 'Ростов ЖК Полет '),
+('sokolniki', 'Ростов ЖК Сокольники'),
+('siyanie', 'Ростов ЖК Сияние '),
+('mechta', 'Ростов ЖК Мечта '),
+('akademiya', 'Новосибирск ЖК Академия'),
+('1956kvartaly', 'Новосибирск ЖК 1956. Кварталы Телецентра'),
+('vesna', 'Новосибирск ЖК Весна'),
+('vinograd', 'Новосибирск ЖК Виноград'),
+('yasnyy', 'Новосибирск ЖК Город-парк Ясный берег'),
+('divnogorskiy', 'Новосибирск ЖК Дивногорский'),
+('ezhevika', 'Новосибирск ЖК Ежевика'),
+('nikolskiy', 'Новосибирск ЖК Никольский Парк'),
+('okolica', 'Новосибирск ЖК Околица'),
+('spektr', 'Новосибирск ЖК Спектр'),
+('stranaberegovaya', 'Новосибирск ЖК Страна. Береговая'),
+('lermontovsky', 'Санкт-Петербург ЖК Лермонтовский 54'),
+('promenade', 'Санкт-Петербург ЖК Promenade'),
+('che', 'Санкт-Петербург ЖК Квартал Che'),
+('novyylessner', 'Санкт-Петербург ЖК Новый Лесснер'),
+('petrovskaya', 'Санкт-Петербург ЖК Петровская Доминанта'),
+('domino', 'Санкт-Петербург ЖК Domino (Домино)'),
+('glorax', 'Санкт-Петербург ЖК GloraX Балтийская (Глоракс Балтийская)'),
+('view', 'Санкт-Петербург ЖК Grand View (Гранд Вью)'),
+('moiseenko10', 'Санкт-Петербург ЖК Апартаменты Моисеенко 10'),
+('vidi', 'Санкт-Петербург ЖК Инвест-отель VIDI (ВИДИ)'),
+('institutskiy', 'Санкт-Петербург ЖК Институтский'),
+('lisichanskaya22', 'Санкт-Петербург ЖК Лисичанская'),
+('bolshaya', 'Санкт-Петербург ЖК ЛСР. Большая Охта'),
+('sampsonievskiy', 'Санкт-Петербург ЖК Сампсониевский 32'),
+('korona', 'Санкт-Петербург ЖК Северная Корона'),
+('talento', 'Санкт-Петербург ЖК Клубный дом TALENTO'),
+('manhattan', 'Санкт-Петербург ЖК Клубный дом Манхэттен'),
+('pobedy', 'Санкт-Петербург ЖК Парк Победы'),
+('modum', 'Санкт-Петербург ЖК Модум'),
+('neve', 'Санкт-Петербург ЖК Эталон на Неве'),
+('bolshoj67', 'Санкт-Петербург ЖК Большой 67'),
+('morskaya', 'Санкт-Петербург ЖК Морская набережная'),
+('1733', 'Санкт-Петербург ЖК 17.33'),
+('regenbogen', 'Санкт-Петербург ЖК Регенбоген'),
+('akvilonzalive', 'Санкт-Петербург ЖК Аквилон ZALIVE'),
+('avant', 'Санкт-Петербург ЖК Avant'),
+('belyi', 'Санкт-Петербург ЖК Белый Остров'),
+('karetnogo', 'Санкт-Петербург ЖК Дом на Васильевском'),
+('amo', 'Санкт-Петербург ЖК Amo'),
+('leaves', 'Санкт-Петербург ЖК Аквилон Leaves'),
+('respect', 'Санкт-Петербург ЖК Respect'),
+('bairon', 'Санкт-Петербург ЖК Байрон'),
+('peremen', 'Санкт-Петербург ЖК Ветер перемен 2'),
+('alpen', 'Санкт-Петербург ЖК ALPEN'),
+('friends', 'Санкт-Петербург ЖК Friends'),
+('kudrovo2', 'Санкт-Петербург ЖК ID Kudrovo II'),
+('moskovskiy', 'Санкт-Петербург ЖК ID Moskovskiy'),
+('newpiter', 'Санкт-Петербург ЖК NewПитер'),
+('kapralskiy', 'Санкт-Петербург ЖК Капральский'),
+('lyubograd', 'Санкт-Петербург ЖК Любоград'),
+('murino', 'Санкт-Петербург ЖК Мурино Клаб'),
+('gorelovo', 'Санкт-Петербург ЖК Новое Горелово'),
+('yanila', 'Санкт-Петербург ЖК Янила Драйв'),
+('yaninskiy', 'Санкт-Петербург ЖК Янинский лес'),
+('lesart2', 'Санкт-Петербург ЖК ЛесART'),
+('kantemirovskaya11', 'Санкт-Петербург ЖК Кантемировская'),
+('chernaya', 'Санкт-Петербург ЖК Zoom Черная речка'),
+('chkalov', 'Санкт-Петербург ЖК Чкалов'),
+('FoRestakvilon', 'Санкт-Петербург ЖК FoRest Аквилон'),
+('novoorlovsky', 'Санкт-Петербург ЖК Квартал Новоорловский'),
+('lubograd', 'Санкт-Петербург ЖК Любоград'),
+('milya', 'Санкт-Петербург ЖК Морская миля'),
+('novoesertolovo', 'Санкт-Петербург ЖК Микрорайон Новое Сертолово'),
+('parkolovo', 'Санкт-Петербург ЖК Парголово'),
+('strizhy', 'Санкт-Петербург ЖК Стрижи в Невском'),
+('univer', 'Санкт-Петербург ЖК Универ Сити'),
+('yasno', 'Санкт-Петербург ЖК Ясно.Янино'),
+('yugtaun', 'Санкт-Петербург ЖК ЮгТаун. Олимпийские кварталы'),
+('zeleny', 'Санкт-Петербург ЖК Зелёный квартал'),
+('prinevsky', 'Санкт-Петербург ЖК Приневский'),
+('river', 'Москва ЖК River Park Towers Кутузовский'),
+('primavera', 'Москва ЖК Клубный город на реке Primavera'),
+('luzhniki', 'Москва ЖК Luzhniki Collection'),
+('avtory', 'Москва ЖК Лаунж-дома Авторы на Большой'),
+('businovskiy', 'Москва ЖК Бусиновский парк'),
+('moskvoreche', 'Москва ЖК Москворечье'),
+('republic', 'Москва ЖК Republic'),
+('lavrushinskiy', 'Москва ЖК Дом Лаврушинский'),
+('slava', 'Москва ЖК SLAVA'),
+('pride', 'Москва ЖК Pride'),
+('hide', 'Москва ЖК HIDE'),
+('zilart', 'Москва ЖК Зиларт'),
+('badaevsky', 'Москва ЖК Бадаевский'),
+('frunzenskaya', 'Москва ЖК Фрунзенская 30'),
+('life', 'Москва ЖК LIFE TIME'),
+('chainye', 'Сочи ЖК Чайные холмы'),
+('alpika', 'Сочи ЖК Новая Альпика'),
+('portugalii', 'Сочи ЖК Каравелла Португалии'),
+('gorniy', 'Сочи ЖК Горный Квартал'),
+('letniy', 'Сочи ЖК Летний'),
+('svetsky', 'Сочи ЖК Светский лес'),
+('olivia', 'Сочи ЖК Olivia'),
+('frukty', 'Сочи ЖК Фрукты'),
+('lestorya', 'Сочи ЖК Лестория'),
+('vremya', 'Тула ЖК Время'),
+('segodnya', 'Тула ЖК Сегодня'),
+('pryanichnaya', 'Тула ЖК Пряничная Слобода'),
+('suvorovskiy', 'Тула ЖК Суворовский'),
+('kulik', 'Тула ЖК Кулик'),
+('tula', 'Тула ЖК Новая Тула'),
+('karpova', 'Тула ЖК Карпова'),
+('nadezhnyy', 'Тула ЖК Надежный'),
+('platon', 'Тула ЖК Платон парк'),
+('ritmy', 'Тюмень ЖК Ритмы'),
+]
+
 def determine_supplier(parts):
     """
     Обрабатывает фрагменты метки, сначала проверяя на бесплатного поставщика в конце метки. Если находится бесплатный поставщик, функция завершается.
@@ -143,53 +294,59 @@ def determine_supplier(parts):
 
 def determine_supplier2(supplier, parts):
     """
-    Обрабатывает поставщика и фрагменты метки на явное соответствие, чтобы определить стоимость покупки.
-    Построена на основе справочника https://docs.google.com/spreadsheets/d/1VCJTcPBBeMWkiKUZc6IEo0fGnOQiZmLRo4DuYayBT40/edit?gid=0#gid=0
+    Определяет стоимость покупки на основе поставщика и фрагментов метки.
     """
-    if supplier == 'Андрей' and ('7p' in parts or 'spb' in parts):
-        return 'andr_7p'
-    elif supplier == 'Андрей' and ('5p' in parts or 'msk' in parts):
-        return 'andr_5p'
-    elif supplier == 'Андрей' and ('0p' in parts or '0р' in parts or 'free' in parts):
-        return 'andr_0p'  
-    elif supplier == 'Теле2' and '4.5p' in parts:
-        return 't2_4.5p'
-    elif supplier == 'ВР' and 'cod' in parts:
-        return 'wr_cod'
-    elif supplier == 'ВР' and 'meg' in parts:
-        return 'wr_meg'
-    elif supplier == 'Datacall' and '10p' in parts:
-        return 'datacall_10p'
-    elif supplier == 'Datacall' and '7.5p' in parts:
-        return 'datacall_7.5p'
-    elif supplier == 'Datacall' and '6p' in parts:
-        return 'datacall_6p'
-    elif supplier == 'Datacall' and '5p' in parts:
-        return 'datacall_5p'
-    elif supplier == 'Datacall' and '3p' in parts:
-        return 'datacall_3p'
-    elif supplier == 'Datacall' and ('0p' in parts or '0р' in parts or 'free' in parts):
-        return 'datacall_0p'
-    elif supplier == 'Ноухау' and ('0p' in parts or '0р' in parts or 'free' in parts):
-        return 'knowhow_0p'
-    elif supplier == 'ДМП' and 'cod' in parts:
-        return 'dmp_cod'
-    elif supplier == 'Рефекшн кинетик' and 'cod' in parts:
-        return 'reffection_cod'
-    elif supplier == 'Рефекшн кинетик' and ('0p' in parts or '0р' in parts or 'free' in parts):
-        return 'reffection_0p'
-    elif supplier == 'Игорь' and ('0p' in parts or '0р' in parts or 'free' in parts):
-        return 'lagom_0p'
-    elif supplier == 'Игорь' and '6p' in parts:
-        return 'lagom_6p'
-    elif supplier == 'Игорь' and '12p' in parts:
-        return 'lagom_12p'
-    elif supplier == 'Игорь' and '10p' in parts:
-        return 'lagom_10p'
-    elif supplier == 'Скоринг' and ('0p' in parts or '0р' in parts or 'free' in parts):
-        return 'beeline_scoring_0p' 
-    else:
-        return supplier
+    # Приводим фрагменты к единому формату: заменяем , -> . и русскую р -> латинскую p
+    normalized_parts = [p.replace(',', '.').replace('р', 'p') for p in parts]
+
+    zero_price = {'0p', 'free'}
+
+    # Словарь с правилами
+    rules = {
+        'Андрей': {'7p': 'andr_7p', '5p': 'andr_5p', **{k: 'andr_0p' for k in zero_price}},
+        'Теле2': {'4.5p': 't2_4.5p'},
+        'ВР': {'cod': 'wr_cod', 'meg': 'wr_meg'},
+        'Datacall': {'10p': 'datacall_10p', '7.5p': 'datacall_7.5p', '6p': 'datacall_6p',
+                     '5p': 'datacall_5p', '3p': 'datacall_3p', **{k: 'datacall_0p' for k in zero_price}},
+        'Ноухау': {k: 'knowhow_0p' for k in zero_price},
+        'ДМП': {'cod': 'dmp_cod'},
+        'Рефекшн кинетик': {'cod': 'reffection_cod', '3.5p': 'reffection_3,5p', **{k: 'reffection_0p' for k in zero_price}},
+        'Игорь': {'6p': 'lagom_6p', '12p': 'lagom_12p', '10p': 'lagom_10p', **{k: 'lagom_0p' for k in zero_price}},
+        'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price}
+    }
+
+    # Значения по умолчанию для поставщиков
+    default_supplier = {
+        'ВР': 'wr',
+        'ДМП': 'dmp',
+        'Скоринг': 'beeline scoring',
+        'Теле2': 't2',
+        'Рефекшн кинетик': 'reffection',
+        'Ноухау': 'knowhow',
+        'Кокос': 'kokos',
+        'Ростелеком': 'RT ростелеком'
+    }
+
+    # Получаем правила для текущего поставщика
+    supplier_rules = rules.get(supplier, {})
+
+    # Словарь для хранения позиций найденных паттернов
+    matches = {}
+
+    # Перебираем элементы метки и ищем точные совпадения с паттернами поставщика
+    for i, part in enumerate(normalized_parts):
+        for pattern, supplier_pattern in supplier_rules.items():
+            if part == pattern:  # Строгое соответствие
+                # Если совпадение уже найдено, берем более раннюю позицию
+                if supplier_pattern not in matches or matches[supplier_pattern] > i:
+                    matches[supplier_pattern] = i
+
+    # Если есть совпадения, возвращаем поставщика с минимальной позицией
+    if matches:
+        return min(matches, key=matches.get)
+
+    # Если ничего не нашли, возвращаем дефолтное значение
+    return default_supplier.get(supplier, 'pp')
     
 def determine_project(parts):
     """
@@ -253,11 +410,25 @@ def determine_project2(project, parts):
         elif project == 'Недвижимость (бп)' and project2 in {'Краснодар','Владивосток','Санкт-Петербург'}:
             project2 = project2 + ' (без прозвон)'
 
-        elif project == 'Перевод звонка' and project2 in {'Москва', 'Санкт-Петербург', 'Мытищи', 'Уфа', 'Калининград', 'Краснодар',
-                                                          'Красноярск', 'Крым', 'Нижний Новгород', 'Новосибирск', 'Ростов', 
-                                                          'Екатеринбург', 'Казань', 'Тюмень', 'Выборг', 'Кировск', 'Коммунар',
-                                                          'Наро-Фоминск', 'Дубна', 'Хотьково', 'Клин', 'Ногинск'}:
-            project2 = project2 + ' (звонок)'  
+        elif project == 'Перевод звонка' and project2 in {'Мытищи', 'Санкт-Петербург', 'Москва'}:
+            project2 = project2 + ' (звонок)'
+
+        elif project == 'Перевод звонка' and project2 in {'Уфа', 'Калининград', 'Краснодар', 'Красноярск', 'Крым', 'Тюмень',
+                                                          'Нижний Новгород', 'Новосибирск', 'Екатеринбург', 'Ростов', 'Казань'}:
+            project2 = 'Перевод КЦ Регионы'
+
+        elif project == 'Перевод звонка' and project2 in {'Ногинск', 'Клин', 'Хотьково', 'Дубна', 'Наро-Фоминск'}:
+            project2 = 'Перевод КЦ ДМО'
+
+        elif project == 'Перевод звонка' and project2 in {'Выборг', 'Кировск', 'Коммунар'}:
+            project2 = 'Перевод КЦ ДЛО'
+
+        elif project == 'Недвижимость (пр)' and project2 in {'Екатеринбург', 'Казань', 'Новосибирск', 'Ростов', 'Тюмень'}:
+            project2 = 'Яндекс Т1'
+
+        elif project == 'Недвижимость (пр)' and project2 in {'Ярославь', 'ХМАО', 'Нижний Новгород', 'Калининград', 'Калуга', 'Уфа', 'Красноярск', 'Челябинск',
+                                                             'Тула', 'Ижевск', 'Пермь', 'Хабаровск', 'Архангельск', 'Адыгея', 'Крым', 'Ярославль'}:
+            project2 = 'Яндекс Т2'          
 
         elif project == 'Авто' and project2 in {'Екатеринбург', 'Челябинск'}:
             project2 = 'Авто Екб и Члб'  
@@ -273,3 +444,53 @@ def determine_project2(project, parts):
         return project  # Если совпадений нет, возвращаем название проекта
 
     return project2  # Возвращаем итоговое значение
+
+def determine_city(project, project2, parts):
+    """
+    Обрабатывает фрагменты метки, сначала проверяя на бесплатного поставщика '_pp'в конце метки. Если находится бесплатный поставщик, метка читается с права на лево.
+    Город назначается по первому фрагменту, который соответствует признаку и корректируется в зависимости от проекта.
+    Объекты ЖК определяются по отдельному списку.
+    """
+    if parts[-1] == 'pp':
+        parts = parts[::-1]
+
+    if project in {'Банковские гарантии', 'Спецтехника', 'Лизинг', 'Аренда спецтехники', 'Авто'}:
+        return project2
+         
+    # Проверяем на объекты ЖК
+    if project == 'ЖК':
+        for part in parts:
+            for pattern, city_object in jk_object:
+                if part == pattern:
+                    return city_object
+                
+    # Словарь для хранения позиций найденных паттернов
+    matches = {}
+
+    # Перебираем элементы метки и ищем точные совпадения
+    for i, part in enumerate(parts):
+        for pattern, city in project2_rules:
+            if part == pattern:  # Строгое соответствие
+                # Если совпадение уже найдено, берем более раннюю позицию
+                if city not in matches or matches[city] > i:
+                    matches[city] = i
+
+    # Если есть совпадения, возвращаем направление с минимальной позицией
+    if matches:
+        city = min(matches, key=matches.get)
+        # Проверяем проект и корректируем направление
+        if project == 'Перевод звонка':
+            city += ' (звонок)'  
+        elif project == 'Недвижимость (бп)':
+            city += ' (без прозвон)'   
+
+        return city  # Возвращаем итоговое значение
+    
+    return project2
+
+def determine_department(parts):
+
+    if 'traf' in parts:
+        return 'Реклама'
+    else:
+        return 'Базы'
