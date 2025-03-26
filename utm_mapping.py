@@ -387,8 +387,10 @@ def determine_project2(project, parts):
         project2 = project
         return project2
     
-    elif project == 'ЖК':
+    if project == 'ЖК':
         parts = [p for p in parts if p != 'vld']
+    else:
+        parts = [p for p in parts if p != 'zastr']
 
     # Словарь для хранения позиций найденных паттернов
     matches = {}
@@ -460,6 +462,11 @@ def determine_city(project, project2, parts):
 
     if project in {'Банковские гарантии', 'Спецтехника', 'Лизинг', 'Аренда спецтехники', 'Авто'}:
         return project2
+    
+    if project == 'ЖК':
+        parts = [p for p in parts if p != 'vld']
+    else:
+        parts = [p for p in parts if p != 'zastr']
          
     # Проверяем на объекты ЖК
     if project == 'ЖК':
