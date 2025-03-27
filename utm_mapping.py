@@ -109,6 +109,7 @@ project2_rules = [
     ('noginsk', 'Ногинск'),
     ('khotcovo', 'Хотьково'),
     ('vyborg', 'Выборг'),
+    ('viborg', 'Выборг'),
     ('kirovsk', 'Кировск'),
     ('communar', 'Коммунар'),
     ('sochi', 'Сочи'),
@@ -312,7 +313,7 @@ def determine_supplier2(supplier, parts):
         'Ноухау': {k: 'knowhow_0p' for k in zero_price},
         'ДМП': {'cod': 'dmp_cod'},
         'Рефекшн кинетик': {'cod': 'reffection_cod', '3.5p': 'reffection_3,5p', **{k: 'reffection_0p' for k in zero_price}},
-        'Игорь': {'6p': 'lagom_6p', '12p': 'lagom_12p', '10p': 'lagom_10p', **{k: 'lagom_0p' for k in zero_price}},
+        'Игорь': {'6p': 'lagom_6p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price}
     }
 
@@ -388,7 +389,8 @@ def determine_project2(project, parts):
         return project2
     
     if project == 'ЖК':
-        parts = [p for p in parts if p != 'vld']
+        parts = [p for p in parts if p not in ['vld', 'vladivostok']]
+
     else:
         parts = [p for p in parts if p != 'zastr']
 
@@ -463,8 +465,11 @@ def determine_city(project, project2, parts):
     if project in {'Банковские гарантии', 'Спецтехника', 'Лизинг', 'Аренда спецтехники', 'Авто'}:
         return project2
     
+    if project2 == 'ЖК Застройщики тест':
+        return project2
+    
     if project == 'ЖК':
-        parts = [p for p in parts if p != 'vld']
+        parts = [p for p in parts if p not in ['vld', 'vladivostok']]
     else:
         parts = [p for p in parts if p != 'zastr']
          
@@ -505,3 +510,4 @@ def determine_department(parts):
         return 'Реклама'
     else:
         return 'Базы'
+    
