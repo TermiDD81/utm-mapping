@@ -3,7 +3,7 @@ free_patterns = {
         "pp": "pp",
         "pesok": "pp",
         "ndzokt5": "pp",
-        "perezakOkt4": "pp",       
+        "perezakokt4": "pp",       
         "replay": "Replay",
         "replаy": "Replay",        
         "dubl": "Дубли",
