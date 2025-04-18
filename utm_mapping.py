@@ -1,10 +1,10 @@
 # Паттерны для бесплатных поставщиков с их названиями
 free_patterns = {
         "pp": "pp",
-        "pesok": "pp",
+        "pesok": "Песок",
         "ndzokt5": "pp",
         "perezakokt4": "pp",       
-        "replay": "Replay",
+        "replay": "Replay", 
         "replаy": "Replay",        
         "dubl": "Дубли",
         "dblvrn": "Двойная воронка",
@@ -327,7 +327,9 @@ def determine_supplier2(supplier, parts):
         'Рефекшн кинетик': 'reffection',
         'Ноухау': 'knowhow',
         'Кокос': 'kokos',
-        'Ростелеком': 'RT ростелеком'
+        'Ростелеком': 'RT ростелеком',
+        'Replay': 'replay',
+        'Песок': 'pesok',
     }
 
     # Получаем правила для текущего поставщика
@@ -511,4 +513,3 @@ def determine_department(parts):
         return 'Реклама'
     else:
         return 'Базы'
-    
