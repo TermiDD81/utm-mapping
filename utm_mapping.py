@@ -267,6 +267,7 @@ jk_object = [
 ('ritmy', 'Тюмень ЖК Ритмы'),
 ('smartpolet', 'Ростов ЖК Смартполет'),
 ('estet', 'Ростов ЖК Эстет'),
+('riviera', 'Ростов ЖК Ривьера'),
 ]
 
 def determine_supplier(parts):
