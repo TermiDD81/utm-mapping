@@ -314,7 +314,7 @@ def determine_supplier2(supplier, parts):
         'ВР': {'cod': 'wr_cod', 'meg': 'wr_meg'},
         'Datacall': {'10p': 'datacall_10p', '7.5p': 'datacall_7.5p', '6p': 'datacall_6p',
                      '5p': 'datacall_5p', '3p': 'datacall_3p', **{k: 'datacall_0p' for k in zero_price}},
-        'Ноухау': {k: 'knowhow_0p' for k in zero_price},
+        'Ноухау': {'newkval': 'knowhow_newkval', **{k: 'knowhow_0p' for k in zero_price}},
         'ДМП': {'cod': 'dmp_cod'},
         'Рефекшн кинетик': {'cod': 'reffection_cod', '3.5p': 'reffection_3,5p', **{k: 'reffection_0p' for k in zero_price}},
         'Игорь': {'6p': 'lagom_6p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
