@@ -152,7 +152,7 @@ avto_rules = [
     ('toyota', 'TOYOTA (Тойота) - Япония'),
     ('volvo', 'VOLVO (Вольво) - Швеция'),
     ('volkswagen', 'VOLKSWAGEN (Фольксваген) - Германия'),
-    ('vaz', 'VAZ (ВАЗ) - Россия'),
+    ('lada', 'VAZ (ВАЗ) - Россия'),
     ('baic', 'BAIC (Бэй Ци) - Китай'),
     ('audi', 'AUDI (Ауди) - Германия'),
     ('bmw', 'BMW (Бэ-эм-вэ) - Германия'),
@@ -616,6 +616,7 @@ def determine_department(parts):
     
 def determine_avto(project, parts):
 
+    # Проверяем на марки Авто
     if project == 'Авто':
         for part in parts:
             for pattern, avto_mark in avto_rules:
