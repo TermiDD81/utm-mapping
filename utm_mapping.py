@@ -622,5 +622,5 @@ def determine_avto(project, parts):
             for pattern, avto_mark in avto_rules:
                 if part == pattern:
                     return avto_mark
-                else: 
-                    return 'Другое'
+        else:
+            return 'Другое'
