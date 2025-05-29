@@ -116,6 +116,97 @@ project2_rules = [
     ('sochi', 'Сочи'),
 ]
 
+# Паттерны для Марок автомабилей
+avto_rules = [
+    ('polar', 'Polar Stone (Полар Стоун) - китай'),
+    ('lexus', 'LEXUS (Лексус) - Япония'),
+    ('faw', 'FAW (Фав) - Китай'),
+    ('gac', 'GAC (Гак) - Китай'),
+    ('evolute', 'EVOLUTE (Эволют) - Россия'),
+    ('nissan', 'NISSAN (Ниссан) - Япония'),
+    ('omoda', 'OMODA (Омода) - Китай'),
+    ('polestar', 'POLESTAR (Полестар) - Швеция'),
+    ('jetta', 'JETTA (Джетта) - Китай'),
+    ('kaiyi', 'KAIYI (Кайюй) - Китай'),
+    ('kia', 'KIA (Киа) - Корея'),
+    ('lynk', 'LYNK CO (Линк энд Ко) - Китай, Швеция'),
+    ('renault', 'RENAULT (Рено) - Франция'),
+    ('rivian', 'RIVIAN (Ривиан) - США'),
+    ('skoda', 'SKODA (Шкода) - Чехия'),
+    ('skywell', 'SKYWELL (Скайвел) - Китай'),
+    ('ravon', 'RAVON (Равон) - Узбекистан'),
+    ('suzuki', 'SUZUKI (Сузуки) - Япония'),
+    ('chevrolet', 'CHEVROLET (Шевроле) - США'),
+    ('citroen', 'CITROEN (Ситроен) - Франция'),
+    ('datsun', 'DATSUN (Датсун) - Япония'),
+    ('dongfeng', 'DONGFENG (Дунфэн) - Китай'),
+    ('uaz', 'UAZ (УАЗ) - Россия'),
+    ('moskvich', 'MOSKVICH (Москвич) - Россия'),
+    ('changan', 'CHANGAN (Чанъянь, Шанань) - Китай'),
+    ('chery', 'CHERY (Чери) - Китай'),
+    ('exeed', 'CHERYEXEED (ЧериЭксид) - Китай'),
+    ('isuzu', 'ISUZU (Исудзу) - Япония'),
+    ('jac', 'JAC (Джак) - Китай'),
+    ('jetour', 'JETOUR (ЦзеТу) - Китай'),
+    ('ssang', 'SSANG_YONG (Ссан-Ён) - Корея'),
+    ('toyota', 'TOYOTA (Тойота) - Япония'),
+    ('volvo', 'VOLVO (Вольво) - Швеция'),
+    ('volkswagen', 'VOLKSWAGEN (Фольксваген) - Германия'),
+    ('vaz', 'VAZ (ВАЗ) - Россия'),
+    ('baic', 'BAIC (Бэй Ци) - Китай'),
+    ('audi', 'AUDI (Ауди) - Германия'),
+    ('bmw', 'BMW (Бэ-эм-вэ) - Германия'),
+    ('byd', 'BYD (Биайди) - Китай'),
+    ('porsche', 'Porsche (Порше) - Германия'),
+    ('land', 'Land Rover (Ландровер) - Великобритания'),
+    ('exlantix', 'Exlantix (Экслантикс) - Китай'),
+    ('foton', 'Foton (Фотон) - Китай'),
+    ('jmc', 'JMC (Джи Эм Си) - США'),
+    ('zotye', 'Zotye (Зоти) - Китай'),
+    ('brilliance', 'Brilliance (Брилианс) - Китай'),
+    ('hafei', 'Hafei (Хафей) - Китай'),
+    ('haval', 'HAVAL (Хавэйл) - Китай'),
+    ('honda', 'HONDA (Хонда) - Япония'),
+    ('hiphi', 'HIPHI (ХиПхи) - Китай'),
+    ('great', 'GREAT WALL (Грейт Уолл) - Китай'),
+    ('hyundai', 'HYUNDAI (Хёндэ) - Корея'),
+    ('lixiang', 'LIXIANG (Лисянь) - Китай'),
+    ('voyah', 'VOYAH (Войя) - Китай'),
+    ('infiniti', 'INFINITI (Инфинити) - Япония'),
+    ('geely', 'GEELY (Джили) - Китай'),
+    ('genesis', 'GENESIS (Дженезис) - Корея'),
+    ('gmc', 'GMC (Джи-Эм-Си) - США'),
+    ('hongqi', 'HONGQI (Хунцы) - Китай'),
+    ('lifan', 'LIFAN (Лифан) - Китай'),
+    ('mazda', 'MAZDA (Мазда) - Япония'),
+    ('nio', 'NIO (Нио) - Китай'),
+    ('mitsubishi', 'MITSUBISHI (Мицубиси) - Япония'),
+    ('mercedes', 'MERCEDES (Мерседес) - Германия'),
+    ('tank', 'TANK (Тэнк) - Китай'),
+    ('livan', 'Livan (Ливэн) - Китай'),
+    ('jaecoo', 'Jaecoo (Джейку) - Китай'),
+    ('aito', 'Aito (Эйто) - китай'),
+    ('avatr', 'Avatr (Аватр) - китай'),
+    ('belgee', 'Belgee (Белджи) - китай/белоруссия'),
+    ('forthing', 'Forthing (Фортинг) - китай'),
+    ('haima', 'Haima (Хайма) - китай'),
+    ('huawei', 'Huawei (Хуавэй) - китай'),
+    ('solaris', 'Solaris (Солярис) - корея'),
+    ('sollers', 'Sollers (Соллерс) - россия'),
+    ('m-hero', 'M-Hero (Эм-Хиро) - китай'),
+    ('ora', 'Ora (Ора) - китай'),
+    ('oshan', 'Oshan (Ошан) - китай'),
+    ('oting', 'Oting (Отинг) - китай'),
+    ('seres', 'Seres (Серес) - китай'),
+    ('seres-aito', 'Seres Aito (Серес Аито) - китай'),
+    ('soueast', 'Soueast (Соуист) - китай'),
+    ('swm', 'SWM (Эс-Вэ-Эм) - китай'),
+    ('venucia', 'Venucia (Венеция) - китай'),
+    ('vgv', 'VGV (Видживи) - китай'),
+    ('wey', 'Wey (Вэй) - китай'),
+    ('zeekr', 'Zeekr (Зикр) - китай'),
+]
+
 jk_object = [
 ('centralnyi', 'Астрахань ЖК Центральный'),
 ('klub25', 'Санкт-Петербург ЖК Клуб 25'),
@@ -268,6 +359,12 @@ jk_object = [
 ('smartpolet', 'Ростов ЖК Смартполет'),
 ('estet', 'Ростов ЖК Эстет'),
 ('riviera', 'Ростов ЖК Ривьера'),
+('sochipark', 'Сочи ЖК Сочи парк'),
+('marinegarden', 'Сочи ЖК Марина гарден 4'),
+('otrazhenie', 'Сочи ЖК Отражение'),
+('svetskiyles', 'Сочи ЖК Светский лес'),
+('kislorod', 'Сочи ЖК Кислород'),
+('kiparis', 'Анапа ЖК Кипарис'),
 ]
 
 def determine_supplier(parts):
@@ -516,3 +613,12 @@ def determine_department(parts):
         return 'Реклама'
     else:
         return 'Базы'
+    
+def determine_avto(project, parts):
+
+    if project == 'Авто':
+        for part in parts:
+            for pattern, avto_mark in avto_rules:
+                if part == pattern:
+                    return avto_mark
+                else: return 'Другое'
