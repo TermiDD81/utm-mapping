@@ -596,7 +596,7 @@ def determine_supplier2(supplier, parts):
         'Datacall': {'10p': 'datacall_10p', '7.5p': 'datacall_7.5p', '6p': 'datacall_6p',
                      '5p': 'datacall_5p', '3p': 'datacall_3p', **{k: 'datacall_0p' for k in zero_price}},
         'Ноухау': {'newkval': 'knowhow_newkval', **{k: 'knowhow_0p' for k in zero_price}},
-        'ДМП': {'cod': 'dmp_cod'},
+        'ДМП': {'cod': 'dmp_cod', 'bilne': 'dmp_beeline'},
         'Рефекшн кинетик': {'cod': 'reffection_cod', '3.5p': 'reffection_3,5p', **{k: 'reffection_0p' for k in zero_price}},
         'Игорь': {'6p': 'lagom_6p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price}
@@ -750,7 +750,7 @@ def determine_project2(project, parts):
 
         elif project == 'Перевод звонка' and project2 in {'Уфа', 'Калининград', 'Краснодар', 'Красноярск', 'Крым', 'Тюмень',
                                                           'Нижний Новгород', 'Новосибирск', 'Екатеринбург', 'Ростов', 'Казань', 
-                                                          'Ярославь', 'ХМАО', 'Калуга', 'Челябинск', 'Владивосток', 'Тула', 
+                                                          'ХМАО', 'Калуга', 'Челябинск', 'Владивосток', 'Тула', 
                                                           'Ижевск', 'Пермь', 'Хабаровск', 'Архангельск', 'Адыгея', 'Ярославль'}:
             project2 = 'Перевод КЦ Регионы'
 
@@ -766,8 +766,8 @@ def determine_project2(project, parts):
         elif project == 'Недвижимость (пр)' and project2 in {'Краснодар', 'Екатеринбург', 'Казань', 'Новосибирск', 'Ростов', 'Тюмень'}:
             project2 = 'Яндекс Т1'
 
-        elif project == 'Недвижимость (пр)' and project2 in {'Ярославь', 'ХМАО', 'Нижний Новгород', 'Калининград', 'Калуга', 'Уфа', 'Красноярск', 'Челябинск',
-                                                             'Тула', 'Ижевск', 'Пермь', 'Хабаровск', 'Архангельск', 'Адыгея', 'Крым', 'Ярославль'}:
+        elif project == 'Недвижимость (пр)' and project2 in {'Ярославль', 'ХМАО', 'Нижний Новгород', 'Калининград', 'Калуга', 'Уфа', 'Красноярск', 'Челябинск',
+                                                             'Тула', 'Ижевск', 'Пермь', 'Хабаровск', 'Архангельск', 'Адыгея', 'Крым'}:
             project2 = 'Яндекс Т2'          
 
         elif project == 'Авто' and project2 in {'Екатеринбург', 'Челябинск'}:
