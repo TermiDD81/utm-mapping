@@ -46,6 +46,7 @@ priority_rules = [
         ("beeline", "Скоринг"),
         ("ipoteka", "Тест"),
         ("kirill", "Кирилл"),
+        ("naumen", "Робот Наумен"),
     ]
 
 # Паттерны для проектов
@@ -617,6 +618,7 @@ def determine_supplier2(supplier, parts):
         'Replay': 'replay',
         'Песок': 'pesok',
         'Дубли': 'DUBL',
+        'Робот Наумен': 'naumen',
     }
 
     # Получаем правила для текущего поставщика
