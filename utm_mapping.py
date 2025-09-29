@@ -553,6 +553,16 @@ jk_object = [
 ('kiparis', 'ЖК Кипарис'),
 ]
 
+#Паттерны для операторов мобильной связи
+mobile_operator = [
+    ('mts', 'МТС'),
+    ('meg', 'Мегафон'),
+    ('rt', 'Ростелком'),
+    ('rtk', 'Ростелком'),
+    ('tele2', 'Теле2'),
+    ('bilne', 'Билайн'),
+]
+
 def determine_supplier(parts):
     """
     Обрабатывает фрагменты метки, сначала проверяя на бесплатного поставщика в конце метки. Если находится бесплатный поставщик, функция завершается.
@@ -592,7 +602,8 @@ def determine_supplier2(supplier, parts):
 
     # Словарь с правилами
     rules = {
-        'Андрей': {'7p': 'andr_7p', '5p': 'andr_5p', '5.5p': 'andr_5.5p', '4p': 'andr_4p', '3p': 'andr_3p', '4.5p': 'andr_4.5p', **{k: 'andr_0p' for k in zero_price}},
+        'Андрей': {'7p': 'andr_7p', '5p': 'andr_5p', '5.5p': 'andr_5.5p', '4p': 'andr_4p', 
+                   '3p': 'andr_3p', '4.5p': 'andr_4.5p', **{k: 'andr_0p' for k in zero_price}},
         'Теле2': {'4.5p': 't2_4.5p'},
         'ВР': {'cod': 'wr_cod', 'meg': 'wr_meg', 'mts': 'wr_mts', 'bilne': 'wr_beeline'},
         'Datacall': {'10p': 'datacall_10p', '7.5p': 'datacall_7.5p', '6p': 'datacall_6p',
@@ -851,3 +862,13 @@ def determine_avto(project, parts):
                     return avto_mark
         else:
             return 'Другое'
+        
+def determine_mobile_operator(parts):
+
+    # Проверяем наличие оператора сотовой связи из метки
+    for part in parts:
+        for pattern, operator in mobile_operator:
+            if part == pattern:
+                return operator
+    else:
+        return 'Не определен'
