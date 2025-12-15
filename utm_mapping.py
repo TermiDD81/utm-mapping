@@ -67,6 +67,7 @@ project_rules = [
 
 # Паттерны для проектов
 project2_rules = [
+    ('avtoperevod', 'Авто Перевод звонка'),
     ('lidact', 'ЖК Лидактив'),
     ('zastr', 'ЖК Застройщики'),
     ('msk', 'Москва'),
@@ -807,8 +808,11 @@ def determine_project2(project, parts):
         elif project == 'Авто' and project2 in {'Екатеринбург', 'Челябинск'}:
             project2 = 'Авто Екб и Члб'  
 
-        elif project == 'Авто' and project2 not in {'Екатеринбург', 'Челябинск'}:
-            project2 = 'Авто Мск и Спб'      
+        elif project == 'Авто' and project2 == {'Авто Перевод звонка'}:
+            project2 = 'Авто Перевод звонка'    
+
+        elif project == 'Авто' and project2 not in {'Екатеринбург', 'Челябинск', 'Авто Перевод звонка'}:
+            project2 = 'Авто Мск и Спб'       
         
     else:
         if project == 'Авто': #Старые метки Авто не имели приписки 'spb' или 'msk', но относились туда
