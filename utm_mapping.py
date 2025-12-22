@@ -391,6 +391,7 @@ jk_project = [
 ('sunhillsolginka', 'ЖК Сочи Комфорт'),
 ('karavellaportugalii', 'ЖК Сочи Комфорт'),
 ('polyanapik', 'ЖК Сочи Комфорт'),
+('moretta', 'ЖК Сочи Премиум'),
 ]
 
 # Паттерны для объектов ЖК
@@ -570,6 +571,7 @@ jk_object = [
 ('sunhillsolginka', 'ЖК Сан Хилс Ольгинка'),
 ('karavellaportugalii', 'ЖК Каравелла Португалии'),
 ('polyanapik', 'ЖК Поляна Пик'),
+('moretta', 'ЖК Моретта'),
 ]
 
 #Паттерны для операторов мобильной связи
