@@ -900,3 +900,17 @@ def determine_mobile_operator(parts):
                 return operator
     else:
         return 'Не определен'
+    
+def determine_product(project, project2):
+
+    # Определяем принадлежность к Продукту исходя их Направления/Проекта
+    if project in ('Авто', 'Спецтехника'):
+        return 'Транспорт'
+    elif project in ('Лизинг', 'Банковские гарантии'):
+        return 'Финансовые услуги' 
+    elif project == 'Перевод звонка' or project2.startswith('Яндекс'):
+        return 'Недвижимость опт' 
+    elif project.startswith('ЖК') or project == 'Недвижимость (бп)' or (project == 'Недвижимость (пр)' and ~project2.startswith('Яндекс')):
+        return 'Недвижимость розница'
+    else:
+        return 'Неизвестно'
