@@ -635,7 +635,7 @@ def determine_supplier2(supplier, parts):
         'Ноухау': {'newkval': 'knowhow_newkval', '16p': 'knowhow_16p', **{k: 'knowhow_0p' for k in zero_price}},
         'ДМП': {'cod': 'dmp_cod', 'bilne': 'dmp_beeline'},
         'Рефекшн кинетик': {'cod': 'reffection_cod', '3.5p': 'reffection_3,5p', **{k: 'reffection_0p' for k in zero_price}},
-        'Игорь': {'6p': 'lagom_6p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
+        'Игорь': {'6p': 'lagom_6p', '15p': 'lagom_15p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price},
         'Кирилл': {'80p': 'kirill_80p', '12p': 'kirill_12p', '10p': 'kirill_10p', '2p': 'kirill_2p', '3p': 'kirill_3p', **{k: 'lagom_0p' for k in zero_price}},
         'Нэтгроуслаб': {**{k: 'ngslb_0p' for k in zero_price}}  
