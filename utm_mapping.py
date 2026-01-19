@@ -395,6 +395,12 @@ jk_project = [
 ('karavellaportugalii', 'ЖК Сочи Комфорт'),
 ('polyanapik', 'ЖК Сочи Комфорт'),
 ('moretta', 'ЖК Сочи Премиум'),
+('neskuchnyysad', 'ЖК Сочи Премиум'),
+('livingston', 'ЖК Сочи Премиум'),
+('macesta', 'ЖК Сочи Комфорт'),
+('cosmosstay', 'ЖК Сочи Комфорт'),
+('cosmoskurortny', 'ЖК Сочи Бизнес'),
+('royalbeach', 'ЖК Сочи Бизнес'),
 ]
 
 # Паттерны для объектов ЖК
@@ -575,6 +581,12 @@ jk_object = [
 ('karavellaportugalii', 'ЖК Каравелла Португалии'),
 ('polyanapik', 'ЖК Поляна Пик'),
 ('moretta', 'ЖК Моретта'),
+('neskuchnyysad', 'ЖК ГК Нескучный сад'),
+('livingston', 'ЖК Livingston Grand Resort & SPA'),
+('macesta', 'ЖК Космос Парк Отель Мацеста'),
+('cosmosstay', 'ЖК Космос Стэй Адлер'),
+('cosmoskurortny', 'ЖК Космос отель Курортный'),
+('royalbeach', 'ЖК Роял бич Сочи'),
 ]
 
 #Паттерны для операторов мобильной связи
