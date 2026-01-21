@@ -14,7 +14,7 @@ free_patterns = {
         }
 
 # Список правил для определения поставщика
-priority_rules = [
+supplier_rules = [
         ("dmp", "ДМП"),
         ("dmpone", "ДМП"),
         ("dmpnew", "ДМП"),       
@@ -614,7 +614,7 @@ def determine_supplier(parts):
 
     # Перебираем элементы метки и ищем точные совпадения
     for i, part in enumerate(parts):
-        for pattern, supplier in priority_rules:
+        for pattern, supplier in supplier_rules:
             if part == pattern:  # Строгое соответствие
                 # Если совпадение уже найдено, берем более раннюю позицию
                 if supplier not in matches or matches[supplier] > i:
@@ -741,6 +741,9 @@ def determine_project(parts):
     # Если совпадений нет
     return "Неизвестно"
 
+def has_yandex_near_city(city_pos, yndx_positions, max_distance=1):
+    return any(abs(city_pos - y_pos) <= max_distance for y_pos in yndx_positions) #Считаем Яндексом ТОЛЬКО если yndx стоит рядом с городом, а не где-то в хвосте после pp
+
 def determine_project2(project, parts):
     """
     Обрабатывает фрагменты метки, сначала проверяя на бесплатного поставщика 'pp' в конце метки. Если находится бесплатный поставщик, метка читается справа налево.
@@ -777,23 +780,13 @@ def determine_project2(project, parts):
     # Если есть совпадения, возвращаем направление с минимальной позицией
     if matches:
         project2 = min(matches, key=matches.get)
-        # Проверяем проект и корректируем направление
-        if project2 == 'ЖК Застройщики' and 'test' in parts:
-            project2 = 'ЖК Застройщики тест'
+        city_pos = matches[project2]
 
-        # elif project.startswith('ЖК'):
-        #         # Перебираем элементы метки и ищем точные совпадения
-        #         for i, part in enumerate(parts):
-        #             for pattern, project2 in jk_project:
-        #                 if part == pattern:  # Строгое соответствие
-        #                     # Если совпадение уже найдено, берем более раннюю позицию
-        #                     if project2 not in matches or matches[project2] > i:
-        #                         matches[project2] = i
-        #                         # Если нашли конкретный проект (включая уточнённые ЖК)
-        #                         if matches:
-        #                             project2 = min(matches, key=matches.get)
-            
-        elif project == 'Недвижимость (бп)' and project2 in {'Краснодар','Владивосток','Санкт-Петербург'}:
+        yndx_positions = [i for i, p in enumerate(parts) if p == 'yndx']
+        is_yandex = has_yandex_near_city(city_pos, yndx_positions)
+
+        # Проверяем проект и корректируем направление
+        if project == 'Недвижимость (бп)' and project2 in {'Краснодар','Владивосток','Санкт-Петербург'}:
             project2 = project2 + ' (без прозвон)'
 
         elif project == 'Перевод звонка' and project2 in {'Мытищи', 'Санкт-Петербург', 'Москва'}:
@@ -811,15 +804,17 @@ def determine_project2(project, parts):
         elif project == 'Перевод звонка' and project2 in {'Выборг', 'Кировск', 'Коммунар'}:
             project2 = 'Перевод КЦ ДЛО'
 
-        elif project == 'Недвижимость (пр)' and project2 in {'Москва', 'Санкт-Петербург'}:
-            project2 = 'Яндекс Т0'
+        elif project == 'Недвижимость (пр)':
+            if is_yandex:
+                if project2 in {'Москва', 'Санкт-Петербург'}:
+                    project2 = 'Яндекс Т0'
 
-        elif project == 'Недвижимость (пр)' and project2 in {'Краснодар', 'Екатеринбург', 'Казань', 'Новосибирск', 'Ростов', 'Тюмень'}:
-            project2 = 'Яндекс Т1'
+                elif project2 in {'Краснодар', 'Екатеринбург', 'Казань', 'Новосибирск', 'Ростов', 'Тюмень'}:
+                    project2 = 'Яндекс Т1'
 
-        elif project == 'Недвижимость (пр)' and project2 in {'Ярославль', 'ХМАО', 'Нижний Новгород', 'Калининград', 'Калуга', 'Уфа', 'Красноярск', 'Челябинск',
-                                                             'Тула', 'Ижевск', 'Пермь', 'Хабаровск', 'Архангельск', 'Адыгея', 'Крым'}:
-            project2 = 'Яндекс Т2'          
+                elif project2 in {'Ярославль', 'ХМАО', 'Нижний Новгород', 'Калининград', 'Калуга', 'Уфа', 'Красноярск', 'Челябинск',
+                                'Тула', 'Ижевск', 'Пермь', 'Хабаровск', 'Архангельск', 'Адыгея', 'Крым'}:
+                    project2 = 'Яндекс Т2'          
 
         elif project == 'Авто' and project2 in {'Екатеринбург', 'Челябинск'}:
             project2 = 'Авто Екб и Члб'  
