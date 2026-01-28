@@ -651,7 +651,7 @@ def determine_supplier2(supplier, parts):
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price},
         'Кирилл': {'80p': 'kirill_80p', '12p': 'kirill_12p', '10p': 'kirill_10p', '2p': 'kirill_2p', '3p': 'kirill_3p', **{k: 'lagom_0p' for k in zero_price}},
         'Нэтгроуслаб': {**{k: 'ngslb_0p' for k in zero_price}},
-        'Robot_maks': {'6t': 'robot_maks_6t'}
+        'Robot_maks': {'6t': 'robot_maks_6t', '5t': 'robot_maks_5t'}
     }
 
     # Значения по умолчанию для поставщиков
