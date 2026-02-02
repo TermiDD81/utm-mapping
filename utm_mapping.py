@@ -916,7 +916,33 @@ def determine_product(project, project2):
         return 'Финансовые услуги' 
     elif project == 'Перевод звонка' or project2.startswith('Яндекс'):
         return 'Недвижимость опт' 
-    elif project.startswith('ЖК') or project == 'Недвижимость (бп)' or (project == 'Недвижимость (пр)' and ~project2.startswith('Яндекс')):
+    elif project.startswith('ЖК') or project == 'Недвижимость (бп)' or (project == 'Недвижимость (пр)' and not project2.startswith('Яндекс')):
         return 'Недвижимость розница'
+    else:
+        return 'Неизвестно'
+    
+def determine_project_new(project, project2):
+
+    # Определяем принадлежность к Проекту(new) исходя из Направления/Проекта
+    if project == 'Авто':
+        return 'Авто'
+    elif project == 'Спецтехника':
+        return 'Спецтехника'
+    elif project == 'Лизинг':
+        return 'Лизинг'    
+    elif project == 'Банковские гарантии':
+        return 'Банковские гарантии'
+    elif project.startswith('ЖК') and project != 'ЖК Лидактив':
+        return 'ЖК Лидген'
+    elif project.startswith('ЖК') and project == 'ЖК Лидактив':
+        return 'ЖК Лидактив'
+    elif project == 'Недвижимость (пр)' and project2 != 'Владивосток' and not project2.startswith('Яндекс'):
+        return 'АН Лидген'
+    elif project == 'Недвижимость (пр)' and project2 == 'Владивосток':
+        return 'Лидактив'
+    elif project2.startswith('Яндекс'):
+        return 'Н_Прозвон'    
+    elif project == 'Перевод звонка':
+        return 'Н_Перевод звонка'
     else:
         return 'Неизвестно'
