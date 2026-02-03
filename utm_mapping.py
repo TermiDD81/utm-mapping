@@ -640,7 +640,7 @@ def determine_supplier2(supplier, parts):
                    '3p': 'andr_3p', '4.5p': 'andr_4.5p', **{k: 'andr_0p' for k in zero_price}},
         'Теле2': {'4.5p': 't2_4.5p'},
         'ВР': {'cod': 'wr_cod', 'meg': 'wr_meg', 'mts': 'wr_mts', 'bilne': 'wr_beeline'},
-        'Datacall': {'10p': 'datacall_10p', '7.5p': 'datacall_7.5p', '6p': 'datacall_6p',
+        'Datacall': {'10p': 'datacall_10p', '7.5p': 'datacall_7.5p', '6p': 'datacall_6p', '6.5p': 'datacall_6.5p',
                      '5p': 'datacall_5p', '3p': 'datacall_3p', '4p': 'datacall_4p',**{k: 'datacall_0p' for k in zero_price}},
         'Ноухау': {'newkval': 'knowhow_newkval', '16p': 'knowhow_16p', **{k: 'knowhow_0p' for k in zero_price}},
         'ДМП': {'cod': 'dmp_cod', 'bilne': 'dmp_beeline'},
