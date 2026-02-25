@@ -629,6 +629,10 @@ def determine_supplier2(supplier, parts, utm_source):
     """
     Обрабатывает фрагменты метки, проверяя наличие доп условий, для уже определенного поставщика.
     """
+
+    if supplier == 'Robot_maks':
+        return utm_source
+
     # Приводим фрагменты к единому формату: заменяем , -> . и русскую р -> латинскую p
     normalized_parts = [p.replace(',', '.').replace('р', 'p') for p in parts]
 
@@ -664,7 +668,6 @@ def determine_supplier2(supplier, parts, utm_source):
         'Replay': 'replay',
         'Песок': 'pesok',
         'Дубли': 'DUBL',
-        'Robot_maks': utm_source,
     }
 
     # Получаем правила для текущего поставщика
