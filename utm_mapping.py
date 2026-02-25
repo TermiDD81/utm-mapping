@@ -648,8 +648,7 @@ def determine_supplier2(supplier, parts):
         'Игорь': {'6p': 'lagom_6p', '7p': 'lagom_7p', '15p': 'lagom_15p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price},
         'Кирилл': {'80p': 'kirill_80p', '12p': 'kirill_12p', '10p': 'kirill_10p', '2p': 'kirill_2p', '3p': 'kirill_3p', **{k: 'kirill_0p' for k in zero_price}},
-        'Нэтгроуслаб': {**{k: 'ngslb_0p' for k in zero_price}},
-        'Robot_maks': {'6t': 'robot_maks_6t', '5t': 'robot_maks_5t', '4t': 'robot_maks_4t', '3t': 'robot_maks_3t'}
+        'Нэтгроуслаб': {**{k: 'ngslb_0p' for k in zero_price}}
     }
 
     # Значения по умолчанию для поставщиков
@@ -665,7 +664,7 @@ def determine_supplier2(supplier, parts):
         'Replay': 'replay',
         'Песок': 'pesok',
         'Дубли': 'DUBL',
-        'Robot_maks': 'robot_maks',
+        'Robot_maks': utm_source,
     }
 
     # Получаем правила для текущего поставщика
