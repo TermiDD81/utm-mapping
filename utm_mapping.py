@@ -625,7 +625,7 @@ def determine_supplier(parts):
     # Если совпадений нет
     return "Неизвестно"
 
-def determine_supplier2(supplier, parts):
+def determine_supplier2(supplier, parts, utm_source):
     """
     Обрабатывает фрагменты метки, проверяя наличие доп условий, для уже определенного поставщика.
     """
