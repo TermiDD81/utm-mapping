@@ -668,6 +668,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Replay': 'replay',
         'Песок': 'pesok',
         'Дубли': 'DUBL',
+        'Нэтгроуслаб': 'ngslb',
     }
 
     # Получаем правила для текущего поставщика
