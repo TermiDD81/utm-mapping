@@ -642,7 +642,7 @@ def determine_supplier2(supplier, parts, utm_source):
 
     # Словарь с правилами
     rules = {
-        'Андрей': {'7p': 'andr_7p', '5p': 'andr_5p', '5.5p': 'andr_5.5p', '4p': 'andr_4p', 
+        'Андрей': {'7p': 'andr_7p', '6p': 'andr_6p', '5p': 'andr_5p', '5.5p': 'andr_5.5p', '4p': 'andr_4p', 
                    '3p': 'andr_3p', '4.5p': 'andr_4.5p', **{k: 'andr_0p' for k in zero_price}},
         'Теле2': {'4.5p': 't2_4.5p'},
         'ВР': {'cod': 'wr_cod', 'meg': 'wr_meg', 'mts': 'wr_mts', 'bilne': 'wr_beeline'},
