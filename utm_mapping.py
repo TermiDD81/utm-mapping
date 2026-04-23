@@ -50,6 +50,7 @@ supplier_rules = [
         ("naumen", "Наумен"),
         ("robovoice", "Робовойс"), 
         ("biltrigger", "Билайн триггер"),
+        ("sber_target", "Сбер таргет"),
     ]
 
 # Паттерны для направлений
@@ -678,6 +679,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Дубли': 'DUBL',
         'Нэтгроуслаб': 'ngslb',
         'Билайн триггер': 'biltrigger',
+        'Сбер таргет': 'sber_target',
     }
 
     # Получаем правила для текущего поставщика
