@@ -663,7 +663,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Ноухау': {'newkval': 'knowhow_newkval', '16p': 'knowhow_16p', '9p': 'knowhow_9p', '8,5p': 'knowhow_8,5p', **{k: 'knowhow_0p' for k in zero_price}},
         'ДМП': {'cod': 'dmp_cod', 'bilne': 'dmp_beeline', '8p': 'dmp_8p'},
         'Рефекшн кинетик': {'cod': 'reffection_cod', '3.5p': 'reffection_3,5p', **{k: 'reffection_0p' for k in zero_price}},
-        'Игорь': {'3p': 'lagom_3p', '5p': 'lagom_5p', '6p': 'lagom_6p', '7p': 'lagom_7p', '15p': 'lagom_15p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
+        'Игорь': {'3p': 'lagom_3p', '4p': 'lagom_4p', '5p': 'lagom_5p', '6p': 'lagom_6p', '7p': 'lagom_7p', '7.5p': 'lagom_7.5p', '15p': 'lagom_15p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price},
         'Кирилл': {'80p': 'kirill_80p', '60p': 'kirill_60p', '17p': 'kirill_17p', '12p': 'kirill_12p', '10p': 'kirill_10p', '2p': 'kirill_2p', '3p': 'kirill_3p', **{k: 'kirill_0p' for k in zero_price}},
         'Нэтгроуслаб': {'8p': 'ngslb_8p', **{k: 'ngslb_0p' for k in zero_price}},
