@@ -661,7 +661,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Datacall': {'10p': 'datacall_10p', '7.5p': 'datacall_7.5p', '6p': 'datacall_6p', '6.5p': 'datacall_6.5p',
                      '5p': 'datacall_5p', '3p': 'datacall_3p', '4p': 'datacall_4p', '4.2p': 'datacall_4.2p', **{k: 'datacall_0p' for k in zero_price}},
         'Ноухау': {'newkval': 'knowhow_newkval', '16p': 'knowhow_16p', '9p': 'knowhow_9p', '8,5p': 'knowhow_8,5p', **{k: 'knowhow_0p' for k in zero_price}},
-        'ДМП': {'cod': 'dmp_cod', 'bilne': 'dmp_beeline', '8p': 'dmp_8p'},
+        'ДМП': {'cod': 'dmp_cod', 'bilne': 'dmp_beeline', 'mts': 'dmp_mts', 'meg': 'dmp_meg'},
         'Рефекшн кинетик': {'cod': 'reffection_cod', '3.5p': 'reffection_3,5p', **{k: 'reffection_0p' for k in zero_price}},
         'Игорь': {'3p': 'lagom_3p', '4p': 'lagom_4p', '5p': 'lagom_5p', '6p': 'lagom_6p', '7p': 'lagom_7p', '7.5p': 'lagom_7.5p', '15p': 'lagom_15p', '12p': 'lagom_12p', '10p': 'lagom_10p', '4.5p': 'lagom_4.5p', **{k: 'lagom_0p' for k in zero_price}},
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price},
