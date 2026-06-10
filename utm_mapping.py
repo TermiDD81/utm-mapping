@@ -52,6 +52,7 @@ supplier_rules = [
         ("biltrigger", "Билайн триггер"),
         ("sber_target", "Сбер таргет"),
         ("impuls", "Импульс Роста"),
+        ("aibleads", "Эйблидс"),
     ]
 
 # Паттерны для направлений
@@ -667,7 +668,8 @@ def determine_supplier2(supplier, parts, utm_source):
         'Скоринг': {k: 'beeline_scoring_0p' for k in zero_price},
         'Кирилл': {'80p': 'kirill_80p', '60p': 'kirill_60p', '17p': 'kirill_17p', '12p': 'kirill_12p', '10p': 'kirill_10p', '2p': 'kirill_2p', '3p': 'kirill_3p', **{k: 'kirill_0p' for k in zero_price}},
         'Нэтгроуслаб': {'8p': 'ngslb_8p', **{k: 'ngslb_0p' for k in zero_price}},
-        'Импульс Роста': {'15p': 'impuls_15p'}
+        'Импульс Роста': {'15p': 'impuls_15p'},
+        'Эйблидс': {**{k: 'aibleads_0p' for k in zero_price}}
     }
 
     # Значения по умолчанию для поставщиков
