@@ -65,6 +65,8 @@ project_rules = [
     ('avto', 'Авто'),
     ('avto2', 'Авто'),
     ('avto3', 'Авто'),
+    ('avto4', 'Авто'),
+    ('avtoperezvon', 'Авто'),
     ('auto', 'Авто'),
     ('avtoperevod', 'Авто'),
     ('bank', 'Банковские гарантии'),
