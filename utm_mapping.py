@@ -53,6 +53,7 @@ supplier_rules = [
         ("sber_target", "Сбер таргет"),
         ("impuls", "Импульс Роста"),
         ("aibleads", "Эйблидс"),
+        ("mrt", "МРТ")
     ]
 
 # Паттерны для направлений
@@ -675,7 +676,8 @@ def determine_supplier2(supplier, parts, utm_source):
         'Кирилл': {'80p': 'kirill_80p', '60p': 'kirill_60p', '17p': 'kirill_17p', '12p': 'kirill_12p', '10p': 'kirill_10p', '2p': 'kirill_2p', '3p': 'kirill_3p', **{k: 'kirill_0p' for k in zero_price}},
         'Нэтгроуслаб': {'8p': 'ngslb_8p', **{k: 'ngslb_0p' for k in zero_price}},
         'Импульс Роста': {'15p': 'impuls_15p'},
-        'Эйблидс': {**{k: 'aibleads_0p' for k in zero_price}}
+        'Эйблидс': {**{k: 'aibleads_0p' for k in zero_price}},
+        'МРТ': {'10p': 'mrt_10p'}
     }
 
     # Значения по умолчанию для поставщиков
