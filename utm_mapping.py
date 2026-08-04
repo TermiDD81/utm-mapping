@@ -700,6 +700,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Нэтгроуслаб': 'ngslb',
         'Билайн триггер': 'biltrigger',
         'Сбер таргет': 'sber_target',
+        'Яндекс': 'yandex',
     }
 
     # Получаем правила для текущего поставщика
