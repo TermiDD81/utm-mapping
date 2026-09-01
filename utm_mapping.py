@@ -680,8 +680,8 @@ def determine_supplier2(supplier, parts, utm_source):
         'Нэтгроуслаб': {'8p': 'ngslb_8p', **{k: 'ngslb_0p' for k in zero_price}},
         'Импульс Роста': {'15p': 'impuls_15p'},
         'Эйблидс': {**{k: 'aibleads_0p' for k in zero_price}},
-        'МРТ': {'10p': 'mrt_10p'},
-        'Кнам': {'15p': 'knam_15р'}
+        'МРТ': {'10p': 'mrt_10p', '8p': 'mrt_8p'},
+        'Кнам': {'15p': 'knam_15p'} 
     }
 
     # Значения по умолчанию для поставщиков
