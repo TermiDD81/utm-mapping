@@ -54,7 +54,8 @@ supplier_rules = [
         ("impuls", "Импульс Роста"),
         ("aibleads", "Эйблидс"),
         ("mrt", "МРТ"),
-        ("knam", "Кнам")
+        ("knam", "Кнам"),
+        ("abc", "abc")
     ]
 
 # Паттерны для направлений
@@ -681,7 +682,8 @@ def determine_supplier2(supplier, parts, utm_source):
         'Импульс Роста': {'15p': 'impuls_15p'},
         'Эйблидс': {**{k: 'aibleads_0p' for k in zero_price}},
         'МРТ': {'10p': 'mrt_10p', '8p': 'mrt_8p'},
-        'Кнам': {'15p': 'knam_15p'} 
+        'Кнам': {'15p': 'knam_15p'},
+        'abc': {'meg': 'abc_meg', 'mts': 'abc_mts', 'tele2': 'abc_tele2', 'bilne': 'abc_bilne', 'rtk': 'abc_rtk'} 
     }
 
     # Значения по умолчанию для поставщиков
@@ -701,6 +703,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Билайн триггер': 'biltrigger',
         'Сбер таргет': 'sber_target',
         'Яндекс': 'yandex',
+        'abc': 'abc',
     }
 
     # Получаем правила для текущего поставщика
