@@ -683,7 +683,9 @@ def determine_supplier2(supplier, parts, utm_source):
         'Эйблидс': {**{k: 'aibleads_0p' for k in zero_price}},
         'МРТ': {'10p': 'mrt_10p', '8p': 'mrt_8p'},
         'Кнам': {'15p': 'knam_15p'},
-        'abc': {'meg': 'abc_meg', 'mts': 'abc_mts', 'tele2': 'abc_tele2', 'bilne': 'abc_bilne', 'rtk': 'abc_rtk'} 
+        'abc': {'meg': 'abc_meg', 'mts': 'abc_mts', 'tele2': 'abc_tele2', 'bilne': 'abc_bilne', 'rtk': 'abc_rtk'},
+        'alex': {'1p': 'alex_1p'},
+
     }
 
     # Значения по умолчанию для поставщиков
@@ -704,6 +706,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Сбер таргет': 'sber_target',
         'Яндекс': 'yandex',
         'abc': 'abc',
+        'Alex': 'alex',
     }
 
     # Получаем правила для текущего поставщика
