@@ -55,7 +55,7 @@ supplier_rules = [
         ("aibleads", "Эйблидс"),
         ("mrt", "МРТ"),
         ("knam", "Кнам"),
-        ("abc", "abc")
+        ("abc", "ABC")
     ]
 
 # Паттерны для направлений
@@ -683,8 +683,8 @@ def determine_supplier2(supplier, parts, utm_source):
         'Эйблидс': {**{k: 'aibleads_0p' for k in zero_price}},
         'МРТ': {'10p': 'mrt_10p', '8p': 'mrt_8p'},
         'Кнам': {'15p': 'knam_15p'},
-        'abc': {'meg': 'abc_meg', 'mts': 'abc_mts', 'tele2': 'abc_tele2', 'bilne': 'abc_bilne', 'rtk': 'abc_rtk'},
-        'alex': {'1p': 'alex_1p'},
+        'ABC': {'meg': 'abc_meg', 'mts': 'abc_mts', 'tele2': 'abc_tele2', 'bilne': 'abc_bilne', 'rtk': 'abc_rtk'},
+        'Alex': {'1p': 'alex_1p'}, 
 
     }
 
@@ -705,7 +705,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Билайн триггер': 'biltrigger',
         'Сбер таргет': 'sber_target',
         'Яндекс': 'yandex',
-        'abc': 'abc',
+        'ABC': 'abc',
         'Alex': 'alex',
     }
 
