@@ -76,6 +76,7 @@ project_rules = [
     ('bank', 'Банковские гарантии'),
     ('spectehnika', 'Спецтехника'),
     ('lising', 'Лизинг'),
+    ('izhs', 'ИЖС'),
     ('dev', 'dev'),
     ('naumen', 'dev'),
     ('robovoice', 'dev'),
@@ -759,12 +760,12 @@ def determine_project(parts):
         project = min(matches, key=matches.get)
         # Если это общий "ЖК", пытаемся уточнить
         if project == 'ЖК':
-            # Проверяем на специальные типы ЖК
-            for part in parts:
-                if part == 'zastr':
-                    return 'ЖК Застройщики'
-                elif part == 'lidact':
-                    return 'ЖК Лидактив'
+            # Проверяем на специальные типы ЖК !!! 'ЖК Лидактив' закрыт
+            # for part in parts:
+            #     if part == 'zastr':
+            #         return 'ЖК Застройщики'
+            #     elif part == 'lidact':
+            #         return 'ЖК Лидактив'
             
             # Если нет специальных типов, проверяем города
             city_matches = {}
@@ -807,7 +808,7 @@ def determine_project2(project, parts):
         return project  # Если не нашли, возвращаем направление (ЖК Застройщики/Лидактив)
 
     # Направления которые не делятся на проекты внутри себя
-    if project in {'Банковские гарантии', 'Лизинг'}:
+    if project in {'Банковские гарантии', 'Лизинг', 'ИЖС'}:
         project2 = project
         return project2
 
@@ -965,7 +966,8 @@ def determine_product(project, project2):
         return 'Финансовые услуги' 
     elif project == 'Перевод звонка' or project2.startswith('Яндекс'):
         return 'Недвижимость опт' 
-    elif project.startswith('ЖК') or project == 'Недвижимость (бп)' or (project == 'Недвижимость (пр)' and not project2.startswith('Яндекс')):
+    elif project.startswith('ЖК') or project == 'Недвижимость (бп)' or project == 'ИЖС' \
+        or (project == 'Недвижимость (пр)' and not project2.startswith('Яндекс')):
         return 'Недвижимость розница'
     else:
         return 'Неизвестно'
@@ -981,15 +983,17 @@ def determine_project_new(project, project2):
         return 'Лизинг'    
     elif project == 'Банковские гарантии':
         return 'Банковские гарантии'
-    elif project.startswith('ЖК') and project != 'ЖК Лидактив':
+    elif project.startswith('ЖК'): # and project != 'ЖК Лидактив'
         return 'ЖК Лидген'
-    elif project.startswith('ЖК') and project == 'ЖК Лидактив':
-        return 'ЖК Лидактив'
+    # elif project.startswith('ЖК') and project == 'ЖК Лидактив':
+    #     return 'ЖК Лидактив'
     elif project == 'Недвижимость (пр)' and not project2.startswith('Яндекс'):
         return 'АН Лидген'
     elif project2.startswith('Яндекс'):
         return 'Н_Прозвон'    
     elif project == 'Перевод звонка':
         return 'Н_Перевод звонка'
+    elif project == 'ИЖС':
+        return 'ИЖС'
     else:
         return 'Неизвестно'
