@@ -766,6 +766,7 @@ def determine_project(parts):
             #         return 'ЖК Застройщики'
             #     elif part == 'lidact':
             #         return 'ЖК Лидактив'
+            return 'ЖК Застройщики'
             
             # Если нет специальных типов, проверяем города
             city_matches = {}
