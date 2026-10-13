@@ -56,7 +56,8 @@ supplier_rules = [
         ("mrt", "МРТ"),
         ("knam", "Кнам"),
         ("abc", "ABC"),
-        ("vic", "Виктори")
+        ("vic", "Виктори"),
+        ("lf", "Leads-Factory")
     ]
 
 # Паттерны для направлений
@@ -690,6 +691,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'ABC': {'meg': 'abc_meg', 'mts': 'abc_mts', 'tele2': 'abc_tele2', 'bilne': 'abc_bilne', 'rtk': 'abc_rtk'},
         'Alex': {'1p': 'alex_1p'}, 
         'Виктори': {'8p': 'vic_8p'},
+        'Leads-Factory': {'0p': 'lf_0p'},
 
     }
 
@@ -713,6 +715,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'ABC': 'abc',
         'Alex': 'alex',
         'Виктори': 'vic',
+        'Leads-Factory': 'lf',
     }
 
     # Получаем правила для текущего поставщика
