@@ -57,7 +57,8 @@ supplier_rules = [
         ("knam", "Кнам"),
         ("abc", "ABC"),
         ("vic", "Виктори"),
-        ("lf", "Leads-Factory")
+        ("lf", "Leads-Factory"),
+        ("bd", "Биг Дата")
     ]
 
 # Паттерны для направлений
@@ -716,6 +717,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Alex': 'alex',
         'Виктори': 'vic',
         'Leads-Factory': 'lf',
+        'Биг Дата': 'bd',
     }
 
     # Получаем правила для текущего поставщика
