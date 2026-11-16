@@ -59,7 +59,8 @@ supplier_rules = [
         ("vic", "Виктори"),
         ("lf", "Leads-Factory"),
         ("bd", "Биг Дата"),
-        ("bdrl", "Биг Дата реалтайм")
+        ("bdrl", "Биг Дата реалтайм"),
+        ("julia", "Юлия")
     ]
 
 # Паттерны для направлений
@@ -695,6 +696,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Виктори': {'8p': 'vic_8p'},
         'Leads-Factory': {'0p': 'lf_0p'},
         'Биг Дата': {'6p': 'bd_6p'},
+        'Юлия': {**{k: 'julia_0p' for k in zero_price}},
 
     }
 
@@ -721,6 +723,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Leads-Factory': 'lf',
         'Биг Дата': 'bd',
         'Биг Дата реалтайм': 'bdrl',
+        'Юлия': 'julia',
     }
 
     # Получаем правила для текущего поставщика
