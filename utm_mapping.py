@@ -696,7 +696,7 @@ def determine_supplier2(supplier, parts, utm_source):
         'Виктори': {'8p': 'vic_8p'},
         'Leads-Factory': {'0p': 'lf_0p'},
         'Биг Дата': {'6p': 'bd_6p'},
-        'Юлия': {**{k: 'julia_0p' for k in zero_price}},
+        'Юлия': {'6p': 'julia_6p', **{k: 'julia_0p' for k in zero_price}},
 
     }
 
